@@ -1,0 +1,103 @@
+body {
+	background-color: #F6F1EE;
+	font-family: 'Lato', sans-serif;
+}
+
+/*
+* {
+  outline: red 1px solid;
+}
+*/
+
+.header {
+	text-align: center;  
+}
+
+.header-bar {
+	background-color: #D3CAC1;
+}
+
+.pageTitle {
+	color: #514843;
+	font-size: 3em;
+	font-weight: 700;
+	padding: 0;
+	margin: 0.5em;
+}
+
+.box {
+	display: inline-block;
+	margin: 2em;
+	vertical-align: middle;
+}
+
+h3 {
+	margin-top: 0;
+	color: #FE448D;
+}
+
+.instructions {
+	color: #FE448D;
+	font-size: 1em;
+}
+
+.addItem {
+	margin-left: 1em;
+	text-align: center;
+}
+
+.item, .price, .x-check {
+	height: 3em;
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+    width: 18em; 
+    text-align: left;
+    padding-top: 0.7em;
+}
+
+.dl-horizontal dd {
+    text-align: right;
+    overflow: hidden;
+}
+
+.checklist {
+	margin-top: 1.5em;
+	width: 30em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+dl {
+	background-color: #C2E50D;
+	border-radius: 0.5em;
+	padding-left: 1.5em;
+	color: #514843;
+	overflow: hidden; 
+}
+
+.x-check {
+	text-align: right;
+	background-color: #C2E50D;
+	border-style: none;
+	padding-left: 1em;
+	padding-right: 0.8em;
+	font-weight: 900;
+}
+
+.item {
+	font-weight: 900;
+	vertical-align: middle;
+}
+
+.item-struck {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.price-struck {
+    text-decoration: line-through;    
+    color: grey;
+}
+
