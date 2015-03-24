@@ -4,6 +4,7 @@ body {
 }
 
 /*
+FOR TESTING
 * {
   outline: red 1px solid;
 }
@@ -46,30 +47,7 @@ h3 {
 	text-align: center;
 }
 
-.item, .price, .x-check {
-	height: 3em;
-}
-
-.dl-horizontal dt {
-    white-space: normal;
-    width: 18em; 
-    text-align: left;
-    padding-top: 0.7em;
-}
-
-.dl-horizontal dd {
-    text-align: right;
-    overflow: hidden;
-}
-
-.checklist {
-	margin-top: 1.5em;
-	width: 30em;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-dl {
+ul {
 	background-color: #C2E50D;
 	border-radius: 0.5em;
 	padding-left: 1.5em;
@@ -77,7 +55,46 @@ dl {
 	overflow: hidden; 
 }
 
-.x-check {
+li {
+	list-style: none;
+}
+
+
+.name {
+    white-space: normal;
+    width: 16em; 
+    text-align: left;
+    padding-top: 0.5em;
+	font-weight: 900;
+}
+
+.price {
+    text-align: right;
+    overflow: hidden;
+    width: 5em;
+    padding-top: 0.5em;
+}
+
+.buttons {
+	width: 9em;
+	float:left;
+	text-align: right;
+	padding-top: 0.3em;
+}
+
+.name, .price, .buttons {
+	height: 3em;
+	float: left;
+}
+
+.checklist {
+	margin-top: 1.5em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 450px;
+}
+
+button {
 	text-align: right;
 	background-color: #C2E50D;
 	border-style: none;
@@ -86,18 +103,31 @@ dl {
 	font-weight: 900;
 }
 
-.item {
-	font-weight: 900;
-	vertical-align: middle;
-}
-
 .item-struck {
     text-decoration: line-through;
     color: grey;
 }
 
-.price-struck {
-    text-decoration: line-through;    
-    color: grey;
+.button-add {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: #FE448D;
+    font-weight: 400;
 }
 
+.cost {
+	margin: auto;
+	width: 450px;
+}
+
+.cost1 {
+	width: 200px;
+	float:left;
+}
+
+.cost2 {
+	width: 200px;
+	float: right;
+	text-align: right;
+}

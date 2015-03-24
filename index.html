@@ -2,14 +2,22 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>checklist | dream big, start small</title>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+	<!-- add pure form library -->
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<!-- add bootstrap libraries -->
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- add normalize stylesheet for finished look -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- add caryl's stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- add jQuery library -->
+	<script src="//code.jquery.com/jquery-latest.min.js"></script>
+	<!-- add caryl's jquery script -->
+	<script src="js/script.js"></script>
 </head>
 <body>
 	<div class="header">
@@ -30,53 +38,65 @@
 	</div>
 	<form class="pure-form addItem">
 		<div class="pure-u-1-3">
-	    	<input class="pure-input-1" type="text" placeholder="item name">
+	    	<input class="pure-input-1 addName" id="newName" type="text" placeholder="item name">
 	    </div>
-		<div class="pure-u-1-8">
-		    <input class="pure-input-1" type="text" placeholder="price">
+	    <div class="pure-u-1-8">
+		    <input class="pure-input-1 addPrice" id="newPrice" type="text" placeholder="price">
 		</div>
-        <style scoped>
-                .button-add{
-		            color: white;
-		            border-radius: 4px;
-		            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-		            background: #FE448D;
-		        }
-        </style>
-		<button class="pure-button button-add">
-		    <i class="fa fa-plus"></i>
-		    add item
-		</button>
+		<input class="pure-button button-add" id="addButton" type="submit">
+			<!--<i class="fa fa-plus"></i> add item-->
 	</form>
 	<div class="checklist">
-		<dl class="dl-horizontal">
-			<dt class="item">Zucchini</dt>
-				<dd class="price">
-					1.00
-					<button class="x-check"><i class="fa fa-check"></i></button>
-					<button class="x-check"><i class="fa fa-trash-o"></i></button>
-				</dd>
-			<dt class="item">Ben & Jerry's - Americone Dream</dt>
-				<dd class="price">3.79
-					<button class="x-check"><i class="fa fa-check"></i></button>
-					<button class="x-check"><i class="fa fa-trash-o"></i></button>
-				</dd>
-			<dt class="item">Popcorn</dt>
-				<dd class="price">2.99
-					<button class="x-check"><i class="fa fa-check"></i></button>
-					<button class="x-check"><i class="fa fa-trash-o"></i></button>
-				</dd>
-			<dt class="item-struck">Earl Grey Tea</dt>
-				<dd class="price-struck">3.15
-					<button class="x-check"><i class="fa fa-check"></i></button>
-					<button class="x-check"><i class="fa fa-trash-o"></i></button>
-				</dd>
-			<dt class="item-struck">Chicken Breast</dt>
-				<dd class="price-struck">6.50
-					<button class="x-check"><i class="fa fa-check"></i></button>
-					<button class="x-check"><i class="fa fa-trash-o"></i></button>
-				</dd>
-		</dl>
+		<ul id="itemList">
+			<li class="item">
+				<div class="name">Zucchini</div>
+				<div class="price">1.00</div>
+				<div class="buttons">
+					<button id="check"><i class="fa fa-check"></i></button>
+					<button id="x"><i class="fa fa-trash-o"></i></button>
+				</div>
+			</li>
+			<li class="item">
+				<div class="name">Ben & Jerry's - Americone Dream</div>
+				<div class="price">3.79</div>
+				<div class="buttons">
+					<button id="check"><i class="fa fa-check"></i></button>
+					<button id="x"><i class="fa fa-trash-o"></i></button>
+				</div>
+			</li>
+			<li class="item">
+				<div class="name">Popcorn</div>
+				<div class="price">2.99</div>
+				<div class="buttons">
+					<button id="check"><i class="fa fa-check"></i></button>
+					<button id="x"><i class="fa fa-trash-o"></i></button>
+				</div>
+			</li>
+			<li class="item-struck">
+				<div class="name">Earl Grey Tea</div>
+				<div class="price">3.15</div>
+				<div class="buttons">
+					<button id="checked"><i class="fa fa-check"></i></button>
+					<button id="x"><i class="fa fa-trash-o"></i></button>
+				</div>
+			</li>
+			<li class="item-struck">
+				<div class="name">Chicken Breast</div>
+				<div class="price">6.50</div>
+				<div class="buttons">
+					<button id="checked"><i class="fa fa-check"></i></button>
+					<button id="x"><i class="fa fa-trash-o"></i></button>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="cost">
+		<div class="cost1" id="spentId">
+			total spent: $<span class="costSpent" id="spent">9.65</span>
+		</div>
+		<div class="cost2" id="leftId">
+			total cost remaining: $<span class="costLeft" id="left">7.78</span>
+		</div>
 	</div>
 </body>
 </html>
